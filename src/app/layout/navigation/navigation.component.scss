@@ -1,0 +1,21 @@
+@import '../../../styles/index.scss';
+
+.nav {
+  .nav_link--active {
+    // TODO: provide some fancy styles
+    text-decoration: underline;
+    color: violet;
+  }
+  .nav-link {
+    font-size: 56px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 10px;
+
+    @include respond-above(sm) {
+      font-size: 16px;
+      color: $text-light;
+      line-height: $logo-height;
+    }
+  }
+}
