@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="header_logo">
+        <img src="../../../assets/images/logo.svg" alt="Plancy Logo">
+        <span>Plancy</span>
+    </div>
+
+    <div class="menu-btn-mobile">
+        <input type="checkbox" [checked]="isMenuOpened" [value]="isMenuOpened" id="toggle-text-on-left"
+            (click)="toggleMenuVisibility()" />
+        <label for="toggle-text-on-left"><i></i><span></span></label>
+    </div>
+
+    <div class="nav-container">
+        <app-navigation class="nav-mobile" [ngClass]="{ 'nav-mobile--opened': isMenuOpened }"></app-navigation>
+        <button class="header-btn-action">Free download</button>
+    </div>
+</div>
