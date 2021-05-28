@@ -1,0 +1,10 @@
+@import '../styles/index.scss';
+
+.header-container {
+  display: block;
+  width: 100vw;
+  height: 60px;
+}
+.page-container {
+  min-height: calc(100vh - 60px);
+}

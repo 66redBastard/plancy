@@ -1,5 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 *,
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 43px;
+  font-family: 'Zen Dots', cursive;
+
+  span {
+    background: -webkit-linear-gradient(#bb61f2, #926cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+  line-height: 28px;
+  font-weight: $font-weight-bolder;
+  margin-bottom: $margin-bottom-20;
+  opacity: $text-opacity;
+  span {
+    color: $violet-button;
+  }
+}
+
+h3 {
+  font-weight: $font-weight-bolder;
+  opacity: $text-opacity;
+}
+
+.line-height-26 {
+  line-height: 26px;
+}
+
+.text-center {
+  text-align: center;
 }

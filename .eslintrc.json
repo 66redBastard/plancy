@@ -8,12 +8,14 @@
         "project": "tsconfig.json",
         "tsconfigRootDir": "./",
         "sourceType": "module",
-        "createDefaultProgram": true
+        "createDefaultProgram": true,
+        "arrow-parens": [2, "always"]
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "prettier"
       ],
       "plugins": ["prettier"],
       "rules": {

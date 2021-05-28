@@ -1,0 +1,11 @@
+@mixin input-border {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $border-color-grey;
+  border-left: none;
+}
+@mixin main-btn-style {
+  color: #fff;
+  background-color: $button-color-main;
+  font-size: $font-size-btn;
+}

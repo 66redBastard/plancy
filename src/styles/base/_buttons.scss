@@ -1,0 +1,16 @@
+.button {
+  &--main {
+    @include main-btn-style;
+    &-header {
+      width: 121px;
+      height: 30px;
+      @include main-btn-style;
+    }
+    &-sent {
+      width: 100%;
+      max-width: 335px;
+      height: 40px;
+      @include main-btn-style;
+    }
+  }
+}
