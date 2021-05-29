@@ -214,13 +214,20 @@
 .header {
   width: 100vw;
   height: 60px;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  top: 0;
   display: flex;
   position: fixed;
-  top: 0;
+  z-index: 10;
+  max-width: 824px;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: $background-transparent;
+  @include respond-above(sm) {
+    padding: 10px 30px;
+  }
 
   &_logo {
     display: none;
@@ -240,7 +247,7 @@
     }
     span {
       color: $text-light;
-      line-height: $logo-height;
+      line-height: 25px;
       font-weight: $font-weight-bold;
     }
   }
@@ -263,7 +270,7 @@
       transform: translate(-50%);
       width: 100vw;
       height: 100vh;
-      background-color: #ff6347;
+      background-color: rgba(17, 17, 17, 0.4);
     }
   }
 }
@@ -273,13 +280,31 @@
     display: none;
   }
 }
-.header-btn-action {
-  width: 121px;
-  height: 30px;
-  background-color: #926cff;
-  color: #fff;
-  font-size: $font-size-btn;
-}
+
 .nav-container {
   display: flex;
+  flex-direction: column;
+  @include respond-above(sm) {
+    flex-direction: row;
+  }
 }
+
+// .box_2_gen {
+//   animation-duration: 0.25s;
+//   animation-name: createBox;
+
+//   position: relative;
+
+//   background: #ffedad;
+
+//   border: black solid;
+//   border-width: 1px;
+//   border-radius: 15px;
+
+//   width: 98px;
+//   height: 98px;
+
+//   margin: 10px;
+
+//   float: left;
+// }

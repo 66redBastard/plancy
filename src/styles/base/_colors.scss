@@ -1,8 +1,26 @@
+$gray: #e5e5e5;
+$violet-button: #926cff;
+
+$mobile-menu-bg: #fff;
+
 $background-fullpage: #151417;
+$background-transparent: transparent;
+
+$text-light: #fff;
+$text-dark: #222;
+$text-gray: $gray;
+
+$border-color-grey: $gray;
+
+$button-color-main: $violet-button;
 
 body {
   background-color: $background-fullpage;
 }
 
-$text-light: #fff;
-$text-dark: #222;
+.text-gray {
+  color: $text-gray;
+}
+.text-color-hightlight {
+  color: $violet-button;
+}

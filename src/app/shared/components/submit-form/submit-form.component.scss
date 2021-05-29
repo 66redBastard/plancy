@@ -1,0 +1,22 @@
+@import '../../../../styles/index';
+
+.form-container {
+  input {
+    width: 100%;
+    max-width: 335px;
+    padding-bottom: 7px;
+    padding-left: 6px;
+    color: $text-gray;
+    caret-color: $violet-button;
+    background-color: $background-transparent;
+    @include input-border;
+    &:focus {
+      opacity: $text-opacity;
+    }
+  }
+  textarea {
+    &:focus {
+      opacity: $text-opacity;
+    }
+  }
+}
