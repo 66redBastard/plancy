@@ -5,13 +5,9 @@
   @include respond-above(sm) {
     margin: 0 auto;
     max-width: 824px;
-    padding: $padding-lr-20;
   }
 }
 .row {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-top: $margin-top-80;
   &--one {
     margin-top: $margin-top-80;
   }
