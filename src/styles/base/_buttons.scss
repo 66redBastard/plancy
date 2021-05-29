@@ -4,6 +4,7 @@
     &-header {
       width: 121px;
       height: 30px;
+      align-self: center;
       @include main-btn-style;
     }
     &-sent {
@@ -12,5 +13,26 @@
       height: 40px;
       @include main-btn-style;
     }
+  }
+}
+
+// custom primeng carusel arrow btns
+.p-carousel-prev-icon,
+.pi {
+  width: 25px;
+  height: 25px;
+}
+.pi-chevron-left {
+  &:before {
+    @include slider-arrow-buttons;
+    background: url('../../assets/images/icon-left-arrow.svg') no-repeat center
+      center;
+  }
+}
+.pi-chevron-right {
+  &:after {
+    @include slider-arrow-buttons;
+    background: url('../../assets/images/icon-right-arrow.svg') no-repeat center
+      center;
   }
 }

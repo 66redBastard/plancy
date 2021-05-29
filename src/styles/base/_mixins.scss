@@ -9,3 +9,12 @@
   background-color: $button-color-main;
   font-size: $font-size-btn;
 }
+@mixin slider-arrow-buttons {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
