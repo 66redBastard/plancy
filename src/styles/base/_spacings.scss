@@ -4,6 +4,7 @@ $margin-top-60: 60px;
 $margin-top-40: 40px;
 $margin-top-20: 20px;
 $margin-bottom-20: 20px;
+$margin-bottom-50: 50px;
 $margin-bottom-60: 60px;
 
 $padding-bottom-26: 26px;
@@ -19,8 +20,11 @@ $padding-lr-20: 20px;
   margin-top: $margin-top-60;
 }
 .margin-t-100 {
-  margin-top: $margin-top-60;
+  margin-top: $margin-top-100;
 }
 .margin-b-60 {
   margin-bottom: $margin-top-40;
+}
+.margin-b-50 {
+  margin-bottom: $margin-bottom-50;
 }

@@ -1,7 +1,7 @@
 @import '../../../styles/index.scss';
 
 .page {
-  padding: 10px 20px;
+  padding: 10px 20px 60px 20px;
   @include respond-above(sm) {
     margin: 0 auto;
     max-width: 824px;
@@ -28,6 +28,7 @@
   &--left {
     max-width: 422px;
     padding-bottom: $padding-bottom-26;
+    margin: auto;
     p {
       opacity: 0.8;
     }
@@ -36,6 +37,25 @@
     display: none;
     @include respond-above(sm) {
       display: block;
+    }
+  }
+  &--editable-text {
+    .quotes-icon {
+      position: relative;
+      z-index: 2;
+      &:before {
+        width: 20px;
+        height: 23px;
+        top: -12px;
+        left: -8px;
+        content: '';
+        display: block;
+        position: absolute;
+        background: url('../../../assets/images/icon-quotes.svg') no-repeat
+          center center;
+        opacity: $quotes-opacity;
+        z-index: 1;
+      }
     }
   }
 }
