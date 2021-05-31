@@ -1,19 +1,51 @@
 @import '../../../../styles/index';
 
 .form-container {
+  @include respond-above(sm) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
   input {
     width: 100%;
     max-width: 335px;
     padding-bottom: 7px;
-    padding-left: 6px;
+    padding-left: 0px;
+    margin-left: 6px;
     color: $text-gray;
     caret-color: $violet-button;
     background-color: $background-transparent;
     @include input-border;
+    &::placeholder {
+      padding-left: 6px;
+    }
     &:focus {
       opacity: $text-opacity;
     }
   }
+
+  .invalid-email {
+    color: $invalid;
+    @include input-border-invalid;
+  }
+
+  .error-message {
+    &--container {
+      position: relative;
+      .error-text {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $invalid;
+        font-size: $font-size-small;
+        @include respond-above(sm) {
+          font-size: $font-size-small-desktop;
+        }
+      }
+    }
+  }
+
   textarea {
     &:focus {
       opacity: $text-opacity;
