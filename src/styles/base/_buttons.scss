@@ -12,6 +12,10 @@
       max-width: 335px;
       height: 40px;
       @include main-btn-style;
+      @include respond-above(sm) {
+        width: 122px;
+        margin-left: $margin-left-20;
+      }
     }
   }
 }
