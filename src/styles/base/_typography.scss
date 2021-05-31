@@ -7,32 +7,50 @@ body {
   color: #fff;
 }
 
-h1 {
-  font-size: 35px;
-  line-height: 43px;
-  font-family: 'Zen Dots', cursive;
-
-  span {
-    background: -webkit-linear-gradient(#bb61f2, #926cff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.headline {
+  &--h1 {
+    font-size: $font-size-h1;
+    line-height: 43px;
+    font-family: 'Zen Dots', cursive;
+    @include respond-above(sm) {
+      font-size: $font-size-h1-desktop;
+      line-height: 65px;
+    }
+    span {
+      background: -webkit-linear-gradient(#bb61f2, #926cff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
-}
-
-h2 {
-  line-height: 28px;
-  font-weight: $font-weight-bolder;
-  margin-bottom: $margin-bottom-20;
-  opacity: $text-opacity;
-  span {
-    color: $violet-button;
+  &--h2 {
+    line-height: 38px;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bolder;
+    margin-bottom: $margin-bottom-48;
+    opacity: $text-opacity;
+    max-width: 325px;
+    text-align: center;
+    display: inline-block;
+    span {
+      color: $violet-button;
+    }
+    @include respond-above(sm) {
+      max-width: 448px;
+      line-height: 50px;
+      font-size: $font-size-h2-desktop;
+    }
   }
-}
-
-h3 {
-  font-weight: $font-weight-bolder;
-  opacity: $text-opacity;
+  &--h3 {
+    line-height: 26px;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bolder;
+    opacity: $text-opacity;
+    @include respond-above(sm) {
+      font-size: $font-size-h3-desktop;
+      line-height: 50px;
+    }
+  }
 }
 
 .line-height-26 {
@@ -41,4 +59,9 @@ h3 {
 
 .text-center {
   text-align: center;
+}
+.text-left-desktop {
+  @include respond-above(sm) {
+    text-align: left;
+  }
 }
