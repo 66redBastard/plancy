@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-submit-form',
@@ -7,5 +7,13 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./submit-form.component.scss'],
 })
 export class SubmitFormComponent {
-  name = new FormControl('');
+  title = 'email-validation';
+  email = new FormControl('', [
+    Validators.required,
+    Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+  ]);
+
+  get userEmail() {
+    return this.email;
+  }
 }

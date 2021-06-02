@@ -1,4 +1,11 @@
 <div class="form-container">
-    <input class="margin-t-60" type="text" placeholder="Leave your email" [formControl]="name">
+    <input [class.invalid-email]="userEmail.invalid && userEmail.touched" class="margin-t-60" type="text"
+        placeholder="Leave your email" [formControl]="email">
+
+    <div class="error-message--container" *ngIf="(userEmail.invalid && userEmail.touched) || userEmail.dirty">
+        <small *ngIf="userEmail.errors?.required" class="error-text">Email is required</small>
+        <small *ngIf="userEmail.errors?.pattern" class="error-text">Please provide a valid email address</small>
+    </div>
+
     <button class="button--main-sent margin-t-40">Contact us</button>
 </div>
