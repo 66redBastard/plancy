@@ -4,6 +4,12 @@
   border-bottom: 1px solid $border-color-grey;
   border-left: none;
 }
+@mixin input-border-invalid {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $border-color-invalid;
+  border-left: none;
+}
 @mixin main-btn-style {
   color: #fff;
   background-color: $button-color-main;
@@ -17,4 +23,12 @@
   left: 0;
   width: 25px;
   height: 25px;
+}
+@mixin box-img-bg {
+  // background: rgb(146, 108, 255);
+  background-image: radial-gradient(
+    circle,
+    rgba(39, 33, 57, 1) 0%,
+    rgba(18, 18, 19, 1) 100%
+  );
 }

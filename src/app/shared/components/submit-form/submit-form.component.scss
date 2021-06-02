@@ -13,10 +13,22 @@
     &:focus {
       opacity: $text-opacity;
     }
+    @include respond-above(sm) {
+      width: 261px;
+    }
   }
   textarea {
     &:focus {
       opacity: $text-opacity;
+    }
+  }
+  @include respond-above(sm) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    button {
+      width: 122px;
     }
   }
 }

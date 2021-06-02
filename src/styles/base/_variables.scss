@@ -1,15 +1,67 @@
-// FONTS
+// FONT STYLES
 $font-size-btn: 12px;
 $font-size-mobile-link: 18px;
+// headlines
+
+$font-size-h1: 35px;
+$font-size-h1-desktop: 55px;
 $font-size-h2: 28px;
+$font-size-h2-desktop: 40px;
+$font-size-h3: 28px;
+$font-size-h3-desktop: 40px;
+// inpue errors text
+$font-size-small: 12px;
+$font-size-small-desktop: 13px;
 
 $font-weight-thin: 300;
 $font-weight-bold: 600;
 $font-weight-bolder: 700;
 
+// OPACITY
 $text-opacity: 0.8;
 $quotes-opacity: 0.4;
 
 // SIZE
 $logo-width: 26px;
 $logo-height: 28px;
+
+// SPACES
+$margin-top-143: 143px;
+$margin-top-100: 100px;
+$margin-top-80: 80px;
+$margin-top-60: 60px;
+$margin-top-40: 40px;
+$margin-top-20: 20px;
+
+$margin-bottom-20: 20px;
+$margin-bottom-30: 30px;
+$margin-bottom-40: 40px;
+$margin-bottom-48: 48px;
+$margin-bottom-50: 50px;
+$margin-bottom-60: 60px;
+
+$margin-left-20: 20px;
+$margin-tlr-row: 100px 15px 15px;
+
+$padding-bottom-26: 26px;
+$padding-lr-20: 20px;
+$padding-all-20: 20px;
+
+// COLORS
+$gray: #e5e5e5;
+$invalid: #af0606;
+$violet-button: #926cff;
+
+$mobile-menu-bg: #fff;
+
+$background-fullpage: #151417;
+$background-transparent: transparent;
+
+$text-light: #fff;
+$text-dark: #222;
+$text-gray: $gray;
+
+$border-color-grey: $gray;
+$border-color-invalid: $invalid;
+
+$button-color-main: $violet-button;
