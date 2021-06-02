@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss'],
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.scss'],
 })
-export class HomePageComponent implements OnInit {
+export class MainPageComponent implements OnInit {
   constructor() {}
 
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method

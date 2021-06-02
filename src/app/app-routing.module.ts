@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     // eslint-disable-next-line prettier/prettier
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
 ];
 
