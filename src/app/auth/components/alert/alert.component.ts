@@ -8,7 +8,10 @@ import { AlertService } from '../../services/alert.service';
 @Component({
   selector: 'app-alert',
   templateUrl: 'alert.component.html',
-  styleUrls: ['./alert.component.scss'],
+  styleUrls: [
+    './alert.component.scss',
+    '../../../../../node_modules/bootstrap/dist/css/bootstrap.css',
+  ],
 })
 export class AlertComponent implements OnInit, OnDestroy {
   @Input() id = 'default-alert';

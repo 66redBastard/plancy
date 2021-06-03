@@ -9,11 +9,16 @@ import { SubmitFormComponent } from '@shared/components/submit-form/submit-form.
 
 import { CaruselSliderComponent } from 'app/shared/components/carusel-slider/carusel-slider.component';
 
+import { HeaderComponent } from './layout/header/header.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+
 @NgModule({
   declarations: [
     MainPageComponent,
     SubmitFormComponent,
     CaruselSliderComponent,
+    HeaderComponent,
+    NavigationComponent,
   ],
   imports: [
     CommonModule,

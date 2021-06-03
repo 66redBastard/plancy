@@ -5,7 +5,13 @@ import { first } from 'rxjs/operators';
 
 import { AccountService, AlertService } from '../../../auth/services/index';
 
-@Component({ templateUrl: 'login.component.html' })
+@Component({
+  templateUrl: 'login.component.html',
+  styleUrls: [
+    './login.component.scss',
+    '../../../../../node_modules/bootstrap/dist/css/bootstrap.css',
+  ],
+})
 export class LoginComponent implements OnInit {
   form: FormGroup;
   loading = false;
@@ -49,7 +55,8 @@ export class LoginComponent implements OnInit {
       .subscribe({
         next: () => {
           // get return url from query parameters or default to home page
-          const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+          const returnUrl =
+            this.route.snapshot.queryParams['returnUrl'] || '/home';
           this.router.navigateByUrl(returnUrl);
         },
         error: (error) => {

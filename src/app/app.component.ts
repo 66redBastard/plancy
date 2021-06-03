@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AccountService } from './auth/services/account.service';
+import { User } from './auth/models/user';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plancy';
+
+  user: User;
+
+  constructor(private accountService: AccountService) {
+    this.accountService.user.subscribe((x) => (this.user = x));
+  }
+
+  logout() {
+    this.accountService.logout();
+  }
 }

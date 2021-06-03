@@ -8,7 +8,10 @@ import { AccountService, AlertService } from '../../../auth/services/index';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  styleUrls: [
+    './register.component.scss',
+    '../../../../../node_modules/bootstrap/dist/css/bootstrap.css',
+  ],
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;

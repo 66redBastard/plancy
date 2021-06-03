@@ -6,7 +6,10 @@ import { AccountService } from '../../../auth/services/account.service';
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss'],
+  styleUrls: [
+    './layout.component.scss',
+    '../../../../../node_modules/bootstrap/dist/css/bootstrap.css',
+  ],
 })
 export class LayoutComponent {
   constructor(private router: Router, private accountService: AccountService) {
