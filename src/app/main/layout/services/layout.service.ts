@@ -12,7 +12,15 @@ export class LayoutService {
   isMenuOpened = this.click.asObservable();
 
   toggleMenuVisibility() {
+    const body = document.getElementById('body');
+
     this.menuOpened = !this.menuOpened;
     this.click.next(this.menuOpened);
+
+    if (this.menuOpened === true) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = '';
+    }
   }
 }

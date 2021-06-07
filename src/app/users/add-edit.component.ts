@@ -5,7 +5,10 @@ import { first } from 'rxjs/operators';
 
 import { AccountService, AlertService } from '../auth/services/index';
 
-@Component({ templateUrl: 'add-edit.component.html' })
+@Component({
+  templateUrl: 'add-edit.component.html',
+  styleUrls: ['../../../node_modules/bootstrap/dist/css/bootstrap.css'],
+})
 export class AddEditComponent implements OnInit {
   form: FormGroup;
   id: string;

@@ -25,10 +25,13 @@
   height: 25px;
 }
 @mixin box-img-bg {
-  // background: rgb(146, 108, 255);
   background-image: radial-gradient(
     circle,
     rgba(39, 33, 57, 1) 0%,
     rgba(18, 18, 19, 1) 100%
   );
+}
+@mixin text-style-opacity {
+  opacity: $text-opacity;
+  color: $white-txt;
 }

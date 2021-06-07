@@ -1,17 +1,19 @@
 @import '../../../styles/index.scss';
 
 .page {
-  padding: 10px 20px 60px 20px;
-  @include respond-above(sm) {
-    margin: 0 auto;
-    max-width: 824px;
+  background-color: $background-fullpage;
+  &--container {
+    padding: 10px 20px 60px 20px;
+    @include respond-above(sm) {
+      margin: 0 auto;
+      max-width: 824px;
+    }
   }
 }
 .row {
   &--one {
-    margin-top: $margin-top-80;
+    margin-top: $margin-top-143;
     @include respond-above(sm) {
-      margin-top: $margin-top-143;
       display: flex;
     }
   }

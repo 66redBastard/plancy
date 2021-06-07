@@ -1,11 +1,6 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active"
-      [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
-    <a class="nav-item nav-link" (click)="logout()">Logout</a>
-  </div>
-</nav>
-
-<app-alert></app-alert>
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <app-account-header></app-account-header>
+  <app-alert></app-alert>
+  <app-popup></app-popup>
+  <router-outlet></router-outlet>
+</div>

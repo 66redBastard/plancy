@@ -3,10 +3,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-p {
-  color: $white-txt;
-}
-
 .headline {
   &--h1 {
     color: $white-txt;
@@ -67,4 +63,22 @@ p {
   @include respond-above(sm) {
     text-align: left;
   }
+}
+
+.text-white {
+  @include text-style-opacity;
+}
+
+.popup-h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #222222;
+}
+.popup-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }

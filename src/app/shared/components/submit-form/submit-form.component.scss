@@ -1,5 +1,13 @@
 @import '../../../../styles/index';
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: whitesmoke !important;
+}
+
 .form-container {
   @include respond-above(sm) {
     display: flex;
@@ -42,6 +50,9 @@
         color: $invalid;
         font-size: $font-size-small;
         @include respond-above(sm) {
+          left: -264px;
+          width: max-content;
+          transform: translateX(0);
           font-size: $font-size-small-desktop;
         }
       }

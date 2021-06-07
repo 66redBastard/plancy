@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AccountService } from './auth/services/account.service';
-import { User } from './auth/models/user';
+
+// import { AccountService } from './auth/services/account.service';
+// import { User } from './auth/models/user';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,13 @@ import { User } from './auth/models/user';
 export class AppComponent {
   title = 'plancy';
 
-  user: User;
+  // user: User;
 
-  constructor(private accountService: AccountService) {
-    this.accountService.user.subscribe((x) => (this.user = x));
-  }
+  // constructor(private accountService: AccountService) {
+  //   this.accountService.user.subscribe((x) => (this.user = x));
+  // }
 
-  logout() {
-    this.accountService.logout();
-  }
+  // logout() {
+  //   this.accountService.logout();
+  // }
 }
