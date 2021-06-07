@@ -1,0 +1,20 @@
+<div id="header-main-page" class="header-container-in" [ngClass]="{'topAdd-60': user}">
+    <div class="header">
+        <div class="header_logo">
+            <img src="../../../assets/images/logo.svg" alt="Plancy Logo">
+            <span id="logo-text" class="text-logo">Plancy</span>
+        </div>
+
+        <div class="menu-btn-mobile">
+            <input type="checkbox" [checked]="isMenuOpened" [value]="isMenuOpened" id="toggle-text-on-left"
+                (click)="toggleMenuVisibility()" />
+            <label for="toggle-text-on-left"><i></i><span></span></label>
+        </div>
+
+        <div class="nav-container">
+            <app-navigation class="nav-mobile" [ngClass]="{ 'nav-mobile--opened': isMenuOpened }">
+            </app-navigation>
+            <button class="button--main-header">Free download</button>
+        </div>
+    </div>
+</div>

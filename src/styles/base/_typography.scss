@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-
 *,
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
 }
 
 .headline {
   &--h1 {
+    color: $white-txt;
     font-size: $font-size-h1;
     line-height: 43px;
     font-family: 'Zen Dots', cursive;
@@ -28,6 +25,7 @@ body {
     font-size: $font-size-h2;
     font-weight: $font-weight-bolder;
     margin-bottom: $margin-bottom-48;
+    color: $white-txt;
     opacity: $text-opacity;
     max-width: 325px;
     text-align: center;
@@ -46,6 +44,7 @@ body {
     font-size: $font-size-h3;
     font-weight: $font-weight-bolder;
     opacity: $text-opacity;
+    color: $white-txt;
     @include respond-above(sm) {
       font-size: $font-size-h3-desktop;
       line-height: 50px;
@@ -64,4 +63,29 @@ body {
   @include respond-above(sm) {
     text-align: left;
   }
+}
+
+.text-white {
+  @include text-style-opacity;
+}
+.text-description-slider {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 18px !important;
+  max-width: 120px;
+  @include text-style-opacity;
+}
+
+.popup-h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #222222;
+}
+.popup-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
