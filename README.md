@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 I've installed `eslint + prettier` for linting and code formatting.
 
-Tried to use SCSS modules like OOSCSS. Just more practicing is needed.
+Tried to use SCSS modules like OOSCSS. Just more on practicing is needed.
 
 ## Development server
 
