@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Problems ( not critical ).
 
-Scss needs refactoring. 
+Scss needs to be refactored. 
 
 Bootstrap 5 used for Auth and Admin panel.
 
