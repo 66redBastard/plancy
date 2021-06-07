@@ -1,6 +1,5 @@
 @import '../../../../styles/index.scss';
 
-// helper mixin
 @mixin hamburger_tint(
   $color: #000,
   $tint_text: false,
@@ -211,20 +210,31 @@
   }
 }
 
+.header-container-in {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: $background-transparent;
+  transition: background-color 1s ease;
+}
+
 .header {
+  max-width: 824px;
   width: 100vw;
   height: 60px;
   padding: 10px 20px;
   top: 0;
-  display: flex;
-  position: fixed;
-  z-index: 10;
-  max-width: 824px;
   left: 50%;
   transform: translateX(-50%);
+  position: fixed;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $background-transparent;
+  transition: background-color 1s ease;
   @include respond-above(sm) {
     padding: 10px 30px;
   }
@@ -245,10 +255,29 @@
       padding-right: 10px;
       width: 100%;
     }
-    span {
+    .text-logo {
       color: $text-light;
       line-height: 25px;
       font-weight: $font-weight-bold;
+    }
+    .text-dark {
+      color: $text-dark;
+    }
+  }
+}
+.header {
+  &--onscroll-down {
+    color: #222222;
+    background-color: $header-scroll-bg;
+    transition: background-color 1s ease;
+    #toggle-text-on-left + label::before {
+      background-color: $text-dark;
+    }
+    #toggle-text-on-left + label i {
+      background-color: $text-dark;
+    }
+    #toggle-text-on-left + label::after {
+      background-color: $text-dark;
     }
   }
 }

@@ -107,24 +107,7 @@
     display: none;
     @include respond-above(sm) {
       display: block;
-      // position: relative;
-      // z-index: 2;
-      // &::before {
-      //   display: block;
-      //   position: absolute;
-      //   width: 555px;
-      //   height: 650px;
-      //   content: '';
-      //   top: -100px;
-      //   left: -300px;
-      //   z-index: 1;
-      //   @include box-img-bg;
-      // }
     }
-    // img {
-    //   position: relative;
-    //   z-index: 3;
-    // }
   }
 
   &--editable-text {
@@ -156,8 +139,46 @@
     }
   }
 }
+
 .slider-carusel {
   &--container {
     max-width: 824px;
+  }
+}
+
+.star-container {
+  @keyframes hideshow {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #star-1 {
+    animation: hideshow 5s ease-in-out infinite;
+  }
+
+  #star-2--container {
+    position: absolute;
+    top: 240px;
+    right: 35px;
   }
 }

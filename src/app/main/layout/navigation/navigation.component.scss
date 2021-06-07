@@ -1,5 +1,13 @@
 @import '../../../../styles/index.scss';
 
+.nav-onscroll {
+  a {
+    @include respond-above(sm) {
+      color: $text-dark;
+    }
+  }
+}
+
 .nav {
   width: 100%;
   &--container {
@@ -40,10 +48,17 @@
       }
     }
 
-    &--active {
+    &--desktop {
       color: violet;
       font-weight: $font-weight-bold;
       text-decoration: underline;
+    }
+  }
+}
+.nav-onscroll {
+  a {
+    @include respond-above(sm) {
+      color: $text-dark !important;
     }
   }
 }
